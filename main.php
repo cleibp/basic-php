@@ -180,3 +180,58 @@ echo "### PONTEIRO ###\n";
 echo "Não tem PONTEIRO \n";
 echo " Não é necessário liberar memória manualmente, como em C ou C++. A variável será automaticamente coletada pelo coletor de lixo quando não estiver mais em uso. \n";
 echo "\n";
+
+# TRY
+echo "### TRY ###\n";
+echo "Informe o valor 1 para o dividendo: ";
+$numero1 = intval(trim(fgets(STDIN)));
+
+echo "Informe o valor 2 para o divisor: ";
+$numero2 = intval(trim(fgets(STDIN)));
+
+try {
+    if ($numero2 == 0) {
+        throw new Exception('Divisão por zero não é permitida!');
+    }
+    $res = $numero1 / $numero2;
+    echo "Resultado da divisão: " . $res . "\n";
+} catch (Exception $e) {
+    echo "Ocorreu uma exceção: " . $e->getMessage() . "\n";
+}
+echo "\n";
+
+# ENUM
+/*
+echo "### ENUM ###\n";
+
+enum Cor: string {
+  case Vermelho;
+  case Verde;
+  case Azul;
+  case Amarelo;
+  case Laranja;
+}
+
+$minhaCor = Cor::Azul;
+
+switch ($minhaCor) {
+    case Cor::Vermelho:
+        echo "Minha cor favorita é vermelho.\n";
+        break;
+    case Cor::Verde:
+        echo "Minha cor favorita é verde.\n";
+        break;
+    case Cor::Azul:
+        echo "Minha cor favorita é azul.\n";
+        break;
+    case Cor::Amarelo:
+        echo "Minha cor favorita é amarelo.\n";
+        break;
+    case Cor::Laranja:
+        echo "Minha cor favorita é laranja.\n";
+        break;
+    default:
+        echo "Eu não tenho uma cor favorita.\n";
+}
+echo "\n";
+*/
