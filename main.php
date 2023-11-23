@@ -201,10 +201,9 @@ try {
 echo "\n";
 
 # ENUM
-/*
 echo "### ENUM ###\n";
-
-enum Cor: string {
+/*
+enum Cor {
   case Vermelho;
   case Verde;
   case Azul;
