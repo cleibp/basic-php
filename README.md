@@ -29,7 +29,7 @@ Exemplificação da sintaxe geral e básica da Linguagem PHP
 ```
 
 ## 👋🏽 DEMO
-[REPLIT](https://replit.com/@cleibp/Basic-PHP) 
+|=>
 
 ## Contatos
 
